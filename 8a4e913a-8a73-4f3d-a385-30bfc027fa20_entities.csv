@@ -1,0 +1,24 @@
+email,email,"/\b[A-Za-z0-9._%+-]+@([A-Za-z0-9]+\.)+[A-Za-z]{2,}\b/"
+finaltransportgreetings,Thank you,Tnq,Tq
+greetings,Good morning,gm,gud mrng
+greetings,Hi,Hiiii
+greetings,Good Afternoon,ga
+greetings,Good evening,ge,gud evng
+mode,Car,car
+mode,Bus,bus
+mode,Train,train
+mode,Flight,flight
+PhoneNumber,phno,/(\d{10})/
+selectedOption,Yes,s
+selectedOption,4,Four
+selectedOption,No,Nope
+selectedOption,2,Two
+selectedOption,1,One
+selectedOption,4007003
+selectedOption,5007003
+selectedOption,6,Six
+service,I need transport guide,I want transport guide,Provide me with transport guide
+service,I need hospitality guide,I want hospitality guide,Provide me with hospitality guide
+startingandendingpoints,Nizamabad,nzb
+startingandendingpoints,Hyderabad,Hyd
+startingandendingpoints,Khammam,kmm

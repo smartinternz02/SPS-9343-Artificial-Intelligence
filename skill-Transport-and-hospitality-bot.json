@@ -1,0 +1,1043 @@
+{
+  "intents": [
+    {
+      "intent": "Details",
+      "examples": [
+        {
+          "text": "Chandana"
+        },
+        {
+          "text": "Nikhila"
+        },
+        {
+          "text": "Poojitha"
+        },
+        {
+          "text": "Priyanka"
+        },
+        {
+          "text": "Sharon"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Finaltransportgreetings",
+      "examples": [
+        {
+          "text": "Thank you!"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greeting",
+      "examples": [
+        {
+          "text": "Good Afternoon!"
+        },
+        {
+          "text": "Good evening!"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Mode",
+      "examples": [
+        {
+          "text": "Bus"
+        },
+        {
+          "text": "Car"
+        },
+        {
+          "text": "Flight"
+        },
+        {
+          "text": "Train"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "phonenumber",
+      "examples": [],
+      "description": ""
+    },
+    {
+      "intent": "Rating",
+      "examples": [
+        {
+          "text": "Average"
+        },
+        {
+          "text": "Excellent"
+        },
+        {
+          "text": "Good"
+        },
+        {
+          "text": "Need to improve"
+        },
+        {
+          "text": "Very good"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Selectedoption",
+      "examples": [
+        {
+          "text": "1"
+        },
+        {
+          "text": "2"
+        },
+        {
+          "text": "4"
+        },
+        {
+          "text": "4007003"
+        },
+        {
+          "text": "5007003"
+        },
+        {
+          "text": "6"
+        },
+        {
+          "text": "No"
+        },
+        {
+          "text": "Yes"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Service",
+      "examples": [
+        {
+          "text": "I need hospitality guide"
+        },
+        {
+          "text": "I need transport guide"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Startingandendingpoints",
+      "examples": [
+        {
+          "text": "Bangalore"
+        },
+        {
+          "text": "Delhi"
+        },
+        {
+          "text": "Goa"
+        },
+        {
+          "text": "Hyderabad"
+        },
+        {
+          "text": "Khammam"
+        },
+        {
+          "text": "mbai"
+        },
+        {
+          "text": "Nizamabad"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "\\b[A-Za-z0-9._%+-]+@([A-Za-z0-9]+\\.)+[A-Za-z]{2,}\\b"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "finaltransportgreetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Thank you",
+          "synonyms": [
+            "Tnq",
+            "Tq"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "ga"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good evening",
+          "synonyms": [
+            "ge",
+            "gud evng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good morning",
+          "synonyms": [
+            "gm",
+            "gud mrng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hi",
+          "synonyms": [
+            "Hiiii"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "mode",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Bus",
+          "synonyms": [
+            "bus"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Car",
+          "synonyms": [
+            "car"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Flight",
+          "synonyms": [
+            "flight"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Train",
+          "synonyms": [
+            "train"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "PhoneNumber",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "phno",
+          "patterns": [
+            "(\\d{10})"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "selectedOption",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "1",
+          "synonyms": [
+            "One"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2",
+          "synonyms": [
+            "Two"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "4",
+          "synonyms": [
+            "Four"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "4007003",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "5007003",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "6",
+          "synonyms": [
+            "Six"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "No",
+          "synonyms": [
+            "Nope"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Yes",
+          "synonyms": [
+            "s"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "service",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "I need hospitality guide",
+          "synonyms": [
+            "I want hospitality guide",
+            "Provide me with hospitality guide"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "I need transport guide",
+          "synonyms": [
+            "I want transport guide",
+            "Provide me with transport guide"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "startingandendingpoints",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Hyderabad",
+          "synonyms": [
+            "Hyd"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Khammam",
+          "synonyms": [
+            "kmm"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Nizamabad",
+          "synonyms": [
+            "nzb"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_5_1618038392178",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1618040339049",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1618040339074",
+      "previous_sibling": "handler_8_1618040339074"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_4_1618040339049",
+      "event_name": "input",
+      "dialog_node": "handler_8_1618040339074"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greeting || @greetings",
+      "dialog_node": "node_3_1617982836512",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "StartingAndEndingPoints",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "List of options you have is 1.Train 2.Bus 3.Car 4.Flight. Choose one"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#Startingandendingpoints || @startingandendingpoints",
+      "dialog_node": "node_3_1617985921654",
+      "previous_sibling": "node_6_1618036537255"
+    },
+    {
+      "type": "standard",
+      "title": "selectedoption",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Selectedoption || @selectedOption",
+      "dialog_node": "node_3_1617988901083",
+      "previous_sibling": "node_6_1617987292863"
+    },
+    {
+      "type": "standard",
+      "title": "rating",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Rating",
+      "dialog_node": "node_5_1618038392178",
+      "previous_sibling": "node_9_1618023961778"
+    },
+    {
+      "type": "standard",
+      "title": "Modeoftransport",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@mode",
+      "dialog_node": "node_6_1617987292863",
+      "previous_sibling": "node_3_1617985921654"
+    },
+    {
+      "type": "standard",
+      "title": "Phonenumber",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for entering your phone number. Enter starting and ending points now!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@PhoneNumber",
+      "dialog_node": "node_6_1618036537255",
+      "previous_sibling": "node_8_1618036433380"
+    },
+    {
+      "type": "standard",
+      "title": "Detailscollection",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for  entering your name! Now enter your mail."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Details",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_7_1618024442869",
+      "previous_sibling": "node_8_1617984403377"
+    },
+    {
+      "type": "standard",
+      "title": "TypeOfService",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Service",
+      "dialog_node": "node_8_1617984403377",
+      "previous_sibling": "node_3_1617982836512"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for entering your email. Now enter your phone number."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@email",
+      "dialog_node": "node_8_1618036433380",
+      "previous_sibling": "node_7_1618024442869"
+    },
+    {
+      "type": "standard",
+      "title": "finalgreetingsfortransport",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Always here to help you! Give the rating!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@finaltransportgreetings",
+      "dialog_node": "node_9_1618023961778",
+      "previous_sibling": "node_3_1617988901083"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How many Seater? 4 or 6."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1617987292863",
+      "conditions": "@mode:Car",
+      "dialog_node": "response_10_1617987663301",
+      "previous_sibling": "response_2_1617987590941"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We have booked a seat on your name in Godavari express in AC coach. Your seat number is 19 in 9438878. Trains departs at 12:00am. Kindly be at station before 5 minutes of the departure time.r name"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617988901083",
+      "conditions": "@selectedOption:2",
+      "dialog_node": "response_10_1618023295527",
+      "previous_sibling": "response_5_1617989035936"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi!Good Morning! How can I help?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617982836512",
+      "conditions": "@greetings:(Good morning)",
+      "dialog_node": "response_2_1617983237501"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "List of trains you have is: 1. Venkatadhri Express Starting time: 9;00 am 2.Godavari Express starting time: 12:00 am.Choose the number."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1617987292863",
+      "conditions": "@mode:Train",
+      "dialog_node": "response_2_1617987360546",
+      "previous_sibling": "slot_4_1618040339049"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bus number: 400703 Timing:10:00am 2. Bus number: 5007003 Timing:12:00am. Choose bus number"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1617987292863",
+      "conditions": "@mode:Bus",
+      "dialog_node": "response_2_1617987590941",
+      "previous_sibling": "response_2_1617987360546"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Modes that are available",
+            "options": [
+              {
+                "label": "1.",
+                "value": {
+                  "input": {
+                    "text": "Train"
+                  }
+                }
+              },
+              {
+                "label": "2.",
+                "value": {
+                  "input": {
+                    "text": "Car"
+                  }
+                }
+              },
+              {
+                "label": "3.",
+                "value": {
+                  "input": {
+                    "text": "Bus"
+                  }
+                }
+              },
+              {
+                "label": "4.",
+                "value": {
+                  "input": {
+                    "text": "Flight"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1617985921654",
+      "disabled": true,
+      "dialog_node": "response_3_1617986533904"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi!Good Afternoon! How can I help?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617982836512",
+      "conditions": "@greetings:(Good Afternoon)",
+      "dialog_node": "response_4_1617983372644",
+      "previous_sibling": "response_7_1617983320180"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We have booked a 4 seater car. It will pick you at your home by 8;00am."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617988901083",
+      "conditions": "@selectedOption:4",
+      "dialog_node": "response_4_1618023583183",
+      "previous_sibling": "response_9_1618023521281"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Okay! Good. Enter your name."
+              },
+              {
+                "text": "Okay! You want how many days stay!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1617984403377",
+      "conditions": "@service:(I need transport guide)",
+      "dialog_node": "response_5_1617984943725"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We have booked a seat on your name in Venkatadhri express in AC coach. Your seat number is 19 in 9438878. Trains departs at 09:00am. Kindly be at station before 5 minutes of the departure time."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617988901083",
+      "conditions": "@selectedOption:1",
+      "dialog_node": "response_5_1617989035936"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We have booked a seat Your seat number is 19 in  4007003. Bus departs at 10;00am. Kindly be at station before 5 minutes of the departure time."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617988901083",
+      "conditions": "@selectedOption:4007003",
+      "dialog_node": "response_5_1618023412867",
+      "previous_sibling": "response_10_1618023295527"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Timing: 10:00am. Yes/No?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1617987292863",
+      "conditions": "@mode:Flight",
+      "dialog_node": "response_6_1617987730121",
+      "previous_sibling": "response_10_1617987663301"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi!Good Evening! How can I help?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617982836512",
+      "conditions": "@greetings:(Good evening)",
+      "dialog_node": "response_7_1617983320180",
+      "previous_sibling": "response_2_1617983237501"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Okay! Not a problem. You have others modes of transport to look at!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617988901083",
+      "conditions": "@selectedOption:No",
+      "dialog_node": "response_7_1618023805586",
+      "previous_sibling": "response_8_1618023705963"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for the rating!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1618038392178",
+      "conditions": "#Rating",
+      "dialog_node": "response_7_1618038434430"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We have booked a 6 seater car. It will pick you at your home by 8;00"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617988901083",
+      "conditions": "@selectedOption:6",
+      "dialog_node": "response_8_1618023670325",
+      "previous_sibling": "response_4_1618023583183"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We have booked a seat in airindia on your name in the flight number 34879. All the other ddetails will be sent to your mail. Kindly reach the airport atleast before 2 hours."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617988901083",
+      "conditions": "@selectedOption:Yes",
+      "dialog_node": "response_8_1618023705963",
+      "previous_sibling": "response_8_1618023670325"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We have booked a se Your seat number is 19 in 5007003. Bus departs at 10;00am. Kindly be at station before 5 minutes of the departure time."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1617988901083",
+      "conditions": "@selectedOption:5007003",
+      "dialog_node": "response_9_1618023521281",
+      "previous_sibling": "response_5_1618023412867"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1617987292863",
+      "dialog_node": "slot_4_1618040339049"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you? I can help you with the transport guide.."
+              },
+              {
+                "text": "I want to have a transport guide"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Transport and hospitality bot",
+  "language": "en",
+  "description": ""
+}
